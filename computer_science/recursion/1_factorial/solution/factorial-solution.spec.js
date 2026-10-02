@@ -1,4 +1,4 @@
-const factorial = require("./factorial-solution");
+const factorial = require('./factorial-solution');
 
 describe('factorial', () => {
   test('4th factorial number is 24', () => {
@@ -14,24 +14,24 @@ describe('factorial', () => {
     expect(factorial(15)).toBe(1307674368000);
   });
   test('18th factorial number is 6.402373705728e+15', () => {
-    expect(factorial(18)).toBe(6.402373705728e15)
+    expect(factorial(18)).toBe(6.402373705728e15);
   });
   test('0th factorial number is 1', () => {
     expect(factorial(0)).toBe(1);
   });
-  test('doesn\'t accept negatives', () => {
+  test("doesn't accept negatives", () => {
     expect(factorial(-25)).toBe(undefined);
   });
-  test('doesn\'t accept floats', () => {
+  test("doesn't accept floats", () => {
     expect(factorial(5.4)).toBe(undefined);
   });
-  test('doesn\'t accept a number as a string', () => {
+  test("doesn't accept a number as a string", () => {
     expect(factorial('5')).toBe(undefined);
   });
-  test('doesn\'t accept strings', () => {
+  test("doesn't accept strings", () => {
     expect(factorial('foo')).toBe(undefined);
   });
-  test('doesn\'t accept arrays', () => {
+  test("doesn't accept arrays", () => {
     expect(factorial([5])).toBe(undefined);
   });
 });
